@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
+/data/schemas/com.example.data.storage.AppDatabase/1.json
+/app/src/androidTest/java/com/example/testing/ExampleInstrumentedTest.kt
+/data/src/androidTest/java/com/example/data/ExampleInstrumentedTest.kt
+/app/src/test/java/com/example/testing/ExampleUnitTest.kt
+/data/src/test/java/com/example/data/ExampleUnitTest.kt
+/domain/src/test/java/com/example/domain/ExampleUnitTest.kt
