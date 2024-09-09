@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 class TokenRepositoryImplementation @Inject constructor(private val context: Context, private val retrofit: Retrofit): TokenRepository {
 
-    val authRequest: TokenRequest by lazy {
+    private val authRequest: TokenRequest by lazy {
         retrofit.create(TokenRequest::class.java)
     }
 

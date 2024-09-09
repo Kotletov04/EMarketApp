@@ -1,5 +1,6 @@
 package com.example.data.network.dto.products
 
+import com.example.domain.model.ReviewsModel
 import com.google.gson.annotations.SerializedName
 
 data class ReviewsDto(
@@ -20,3 +21,13 @@ data class ReviewsDto(
     var reviewerEmail: String
 
 )
+
+fun ReviewsDto.toReviewsModel(): ReviewsModel {
+    return ReviewsModel(
+        rating = rating,
+        comment = comment,
+        date = date,
+        reviewerName = reviewerName,
+        reviewerEmail = reviewerEmail
+    )
+}

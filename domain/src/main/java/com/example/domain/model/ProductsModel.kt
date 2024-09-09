@@ -2,48 +2,50 @@ package com.example.domain.model
 
 data class ProductsModel(
 
-    var id: Long,
+    var id: Long? = null,
 
-    var title: String,
+    var title: String? = null,
 
-    var description: String,
+    var description: String? = null,
 
-    var category: String,
+    var category: String? = null,
 
-    var price: Float,
+    var price: Float? = null,
 
-    var discountPercentage: Float,
+    var discountPercentage: Float? = null,
 
-    var rating: Float,
+    var rating: Float? = null,
 
-    var stock: Long,
+    var stock: Long? = null,
 
-    var tags: List<String>,
+    var tags: List<String>? = null,
 
-    var brand: String,
+    var brand: String? = null,
 
-    var sku: String,
+    var sku: String? = null,
 
-    var weight: Float,
+    var weight: Float? = null,
 
-    var dimensions: DimensionsModel,
+    var dimensions: DimensionsModel? = null,
 
-    var warrantyInformation: String,
+    var warrantyInformation: String? = null,
 
-    var shippingInformation: String,
+    var shippingInformation: String? = null,
 
-    var availabilityStatus: String,
+    var availabilityStatus: String? = null,
 
-    var reviews: List<ReviewsModel>,
+    var reviews: List<ReviewsModel>? = null,
 
-    var returnPolicy: String,
+    var returnPolicy: String? = null,
 
-    var minimumOrderQuantity: Int,
+    var minimumOrderQuantity: Int? = null,
 
-    var meta: MetaModel,
+    var meta: MetaModel? = null,
 
-    var images: List<String>,
+    var images: List<String>? = null,
 
-    var thumbnail: String
+    var thumbnail: String? = null,
+
+    var errorMessage: String? = null
 
 )

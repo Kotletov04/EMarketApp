@@ -1,7 +1,9 @@
 package com.example.testing.di
 
 import android.content.Context
+import androidx.room.Room
 import com.example.data.repository.TokenRepositoryImplementation
+import com.example.data.storage.AppDatabase
 import com.example.domain.repository.TokenRepository
 import dagger.Module
 import dagger.Provides
@@ -32,4 +34,12 @@ class DataModule {
     fun provideTokenRepository(@ApplicationContext context: Context, retrofit: Retrofit): TokenRepository {
         return TokenRepositoryImplementation(context = context, retrofit = retrofit)
     }
+
+
+    @Provides
+    fun provideAppDatabase(@ApplicationContext context: Context) = Room.databaseBuilder(
+        context = context,
+        klass = AppDatabase::class.java,
+        name = "MarketDatabase.db"
+    )
 }

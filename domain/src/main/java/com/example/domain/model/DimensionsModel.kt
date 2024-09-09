@@ -2,10 +2,10 @@ package com.example.domain.model
 
 data class DimensionsModel(
 
-    var width: Float,
+    var width: Float? = null,
 
-    var height: Float,
+    var height: Float? = null,
 
-    var depth: Float
+    var depth: Float? = null
 
 )

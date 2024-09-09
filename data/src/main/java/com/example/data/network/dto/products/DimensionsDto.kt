@@ -1,5 +1,6 @@
 package com.example.data.network.dto.products
 
+import com.example.domain.model.DimensionsModel
 import com.google.gson.annotations.SerializedName
 
 data class DimensionsDto(
@@ -14,3 +15,11 @@ data class DimensionsDto(
     var depth: Float
 
 )
+
+fun DimensionsDto.toDimensionsModel(): DimensionsModel {
+    return DimensionsModel(
+        width = width,
+        height = height,
+        depth = depth
+    )
+}

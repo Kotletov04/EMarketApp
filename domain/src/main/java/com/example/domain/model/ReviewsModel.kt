@@ -2,14 +2,14 @@ package com.example.domain.model
 
 data class ReviewsModel(
 
-    var rating: Int,
+    var rating: Int? = null,
 
-    var comment: String,
+    var comment: String? = null,
 
-    var date: String,
+    var date: String? = null,
 
-    var reviewerName: String,
+    var reviewerName: String? = null,
 
-    var reviewerEmail: String
+    var reviewerEmail: String? = null
 
 )

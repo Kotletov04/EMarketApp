@@ -2,12 +2,12 @@ package com.example.domain.model
 
 data class MetaModel(
 
-    var createdAt: String,
+    var createdAt: String? = null,
 
-    var updatedAt: String,
+    var updatedAt: String? = null,
 
-    var barcode: String,
+    var barcode: String? = null,
 
-    var qrCode: String
+    var qrCode: String? = null
 
 )
